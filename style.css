@@ -1,0 +1,68 @@
+ .banner{
+    width: 100%;
+    height: 600px;
+    background-color: red;
+    overflow: hidden;
+}
+
+.slide-img{
+    width: 16.6666666667%;
+    height: 600px;
+    background-color: green;
+    overflow: hidden;
+}
+
+.slide-img:nth-child(odd){
+    background-color: blue;
+}
+
+.slide-img>img{
+    width: 100%;
+    height: auto;
+}
+
+.banner-container{
+    width: 600%;
+    height: 600px;
+    background-color: yellow;
+    display: flex;
+    animation-name: carousel;
+    animation-delay: 2s;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+
+@keyframes carousel{
+    5%{
+        margin-left: -100%;
+    }
+    20%{
+        margin-left: -100%;
+    }
+    25%{
+        margin-left: -200%;
+    }
+    40%{
+        margin-left: -200%;
+    }
+    45%{
+        margin-left: -300%;
+    }
+    60%{
+        margin-left: -300%;
+    }
+    65%{
+        margin-left: -400%;
+    }
+    80%{
+        margin-left: -400%;
+    }
+    85%{
+        margin-left: -500%; 
+    }
+    100%{
+        margin-left:-500%;
+    }
+} 
